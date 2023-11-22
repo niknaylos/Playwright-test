@@ -21,9 +21,9 @@ ${document_url}=    https://shorturl.at/stBHP
 # ${message1}=    UTC
 ${report_message}=    [Report link](${document_url})
     #Selectors
-${next_btn}=    .Button.default.has-ripple.primary    #Button 'Next' after phone input
-${msg_field}=    div#editable-message-text    #Message field selector
-${chat}=    div[class='ListItem chat-item-clickable search-result no-selection'] div[role='button']    #Specific chat selector
+${next_btn}=    css=.Button.default.has-ripple.primary    #Button 'Next' after phone input
+${msg_field}=    css#editable-message-text    #Message field selector
+${chat}=    css=div[class='ListItem chat-item-clickable search-result no-selection'] div[role='button']    #Specific chat selector
 
 
 *** Keywords ***
@@ -31,15 +31,15 @@ Open Firefox Without Pop-Ups
     Open Browser    https://web.tawasal.ae/    chromium    headless=${False}    pause_on_failure=${True}
     
 Input phone
-    Type Text    input#sign-in-phone-number   9996617844
+    Type Text    css=#sign-in-phone-number   9996617844
     Click    ${next_btn}
 
 Input OTP  
-    Type Text    input#sign-in-code    11111
+    Type Text    css=#sign-in-code    11111
 
 Open chat
     # Wait Until Element Is Visible    css:#tawasal-search-input    5s
-    Type Text    input#tawasal-search-input    Report Hub
+    Type Text    css=#tawasal-search-input    Report Hub
 
     Click    ${chat}
 
