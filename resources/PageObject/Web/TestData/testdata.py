@@ -3,9 +3,15 @@ import datetime
 #Login Page Test Data
 Browser = "chromium"
 WebsiteUrl = "https://web.tawasal.ae"
-UserPhone = "9996617844"
-UserOtp = "11111"
 
+#Users
+User1Phone = "9996617844"
+User2Phone = "9996619955"
+TestUserOtp = "11111"
+
+#New User
+NewUserFirstName = "Testing"
+NewUserLastName = "9955"
 
 
 #Chatlist + Open Chat data
