@@ -34,13 +34,20 @@ NightModeToggle = "css=.widget"
 
 
 #Contacts locators
-CreateContactButton = "css=button[title='Create New Contact']"
-NewContactPhone = "css=input[aria-label='Phone Number']"
-NewContactFirstName = "css=input[aria-label='First name (required)']"
-NewContactLastName = "css=input[aria-label='Last name (optional)']"
+#ADD
+CreateContactButton = "xpath=(//button[@title='Create New Contact'])[1]"
+NewContactPhoneInput = "css=input[aria-label='Phone Number']"
+NewContactFirstNameInput = "css=input[aria-label='First name (required)']"
+NewContactLastNameInput = "css=input[aria-label='Last name (optional)']"
 SubmitNewContactButton = "css=div[id='portals'] button:nth-child(2)"
 NewContactItem = "css=div[class='ListItem chat-item-clickable no-selection has-ripple'] div[class='ripple-container']"
 
+#EDIT
+OpenUserProfile = "css=div[class='chat-info-wrapper'] div[class='ChatInfo']"
+EditContactInfoButton = "css=button[title='Edit']"
+OldContactFirstName = "css=#user-first-name"
+OldContactLastName = "css=#user-last-name"
+SaveEditedContactInfoButton = "css=button[title='Save']"
 
 #Settings locators
 OpenSettings = "css=div[class='LeftMainHeader'] div:nth-child(3)"

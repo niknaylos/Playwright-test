@@ -7,6 +7,8 @@ Resource    ../resources/PageObject/Web/KeywordDefinition/OpenChat/OpenChatPage.
 Resource    ../resources/PageObject/Web/KeywordDefinition/Browser Setup/Common.robot
 Resource    ../resources/PageObject/Web/KeywordDefinition/Registration/SignUp.robot
 Resource    ../resources/PageObject/Web/KeywordDefinition/Settings/LogOut/LogOut.robot
+Resource    ../resources/PageObject/Web/KeywordDefinition/Settings/Contacts/AddContact.robot
+Resource    ../resources/PageObject/Web/KeywordDefinition/Settings/Contacts/EditContact.robot
 
 
 *** Test Cases ***
@@ -42,3 +44,18 @@ Verify that new user can login again
     Login Page elements are displayed
     Login Routine
     ChatList Page Elements are displayed
+    Take Screenshot    fullPag=${True}
+
+Verify that adding new contact works
+    [Tags]    smoke
+    Open Chrome With Settings
+    Login Routine
+    Open Contacts screen
+    New Contact Elements Are displayed
+
+Verify that editing new contact works
+    [Tags]    smoke
+    Open Chrome With Settings
+    Login Routine
+    Edit Contact Information
+    Take Screenshot    fullPage=${True}

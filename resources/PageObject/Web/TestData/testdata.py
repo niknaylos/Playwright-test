@@ -19,3 +19,11 @@ NewUserLastName = "9955"
 TestReportChat = "Report Hub"
 ReportMessage = "[Report Link](https://shorturl.at/stBHP)"
 datenow = str(datetime.datetime.now(datetime.timezone.utc)) + "UTC"
+
+
+#Add Contact data
+
+NewContactFirstName = "Dmitry"
+NewContactLastName = "Main Account"
+NewContactPhone = "79055581736"
+
