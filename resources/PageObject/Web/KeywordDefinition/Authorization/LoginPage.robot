@@ -1,7 +1,7 @@
 *** Settings ***
 Library         RPA.Browser.Playwright
-Variables       ../Locators/locators.py
-Variables       ../TestData/testdata.py
+Variables       resources/PageObject/Web/Locators/locators.py
+Variables       resources/PageObject/Web/TestData/testdata.py
 
 
 *** Keywords ***

@@ -11,5 +11,5 @@ UserOtp = "11111"
 #Chatlist + Open Chat data
 
 TestReportChat = "Report Hub"
-ReportMessage = "https://shorturl.at/stBHP"
+ReportMessage = "[Report Link](https://shorturl.at/stBHP)"
 datenow = str(datetime.datetime.now(datetime.timezone.utc)) + "UTC"

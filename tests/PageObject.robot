@@ -1,10 +1,10 @@
 *** Settings ***
 Library     RPA.Browser.Playwright
-Resource    ../resources/PageObject/Web/KeywordDefinition/LoginPage.robot
-Resource    ../resources/PageObject/Web/KeywordDefinition/CodeInputPage.robot
-Resource    ../resources/PageObject/Web/KeywordDefinition/ChatListPage.robot
-Resource    ../resources/PageObject/Web/KeywordDefinition/OpenChatPage.robot
-Resource    ../resources/PageObject/Web/KeywordDefinition/Common.robot
+Resource    ../resources/PageObject/Web/KeywordDefinition/Authorization/LoginPage.robot
+Resource    ../resources/PageObject/Web/KeywordDefinition/Authorization/CodeInputPage.robot
+Resource    ../resources/PageObject/Web/KeywordDefinition/ChatList/ChatListPage.robot
+Resource    ../resources/PageObject/Web/KeywordDefinition/OpenChat/OpenChatPage.robot
+Resource    ../resources/PageObject/Web/KeywordDefinition/Browser Setup/Common.robot
 
 
 *** Test Cases ***
