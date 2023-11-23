@@ -13,7 +13,7 @@
 
 * Goals:
 
-1) Add a new account +
+1) Add a new contact +
 2) Create a new dialogue
 3) Change contact name +
 4) Create a group chat
