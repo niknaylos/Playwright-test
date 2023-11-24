@@ -49,6 +49,11 @@ OldContactFirstName = "css=#user-first-name"
 OldContactLastName = "css=#user-last-name"
 SaveEditedContactInfoButton = "css=button[title='Save']"
 
+#DELETE
+DeleteExistingContactButton = "css=div[class='ListItem no-selection has-ripple destructive'] div[class='ripple-container']"
+ConfirmDeletionOfContact = "css=button[class='Button confirm-dialog-button default danger text']"
+CancelDeletionOfContact = "css=button[class='Button confirm-dialog-button default primary text']"
+
 #Settings locators
 OpenSettings = "css=div[class='LeftMainHeader'] div:nth-child(3)"
 OpenMoreActionsMenu = "css=button[title='More actions'] div[class='ripple-container']"
@@ -62,3 +67,9 @@ CancelLogOut = "css=button[class='Button confirm-dialog-button default primary t
 
 #DeleteAccount Page locators PLEASE ADD TO WEB :SOB:
 
+
+
+#Messaging
+#NEW MESSAGE
+ActionButton = "xpath=(//button[@title='New Message'])[1]"
+NewMessageButton = "css=div[class='bubble menu-container custom-scroll bottom right opacity-transition fast open shown'] div:nth-child(1)"

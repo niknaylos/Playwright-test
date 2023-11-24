@@ -9,6 +9,8 @@ Resource    ../resources/PageObject/Web/KeywordDefinition/Registration/SignUp.ro
 Resource    ../resources/PageObject/Web/KeywordDefinition/Settings/LogOut/LogOut.robot
 Resource    ../resources/PageObject/Web/KeywordDefinition/Settings/Contacts/AddContact.robot
 Resource    ../resources/PageObject/Web/KeywordDefinition/Settings/Contacts/EditContact.robot
+Resource    ../resources/PageObject/Web/KeywordDefinition/UserProfile/OpenDiffUserProfile.robot
+Resource    ../resources/PageObject/Web/KeywordDefinition/Settings/Contacts/DeleteContact.robot
 
 
 *** Test Cases ***
@@ -38,13 +40,12 @@ Verify Successful LogOut
     LogOut
 
 Verify that new user can login again
-    [Documentation]    "Помню времена когда не было лего, теперь они хотят сидеть на члене у Олега"
     [Tags]    smoke
     Open Chrome With Settings
     Login Page elements are displayed
     Login Routine
     ChatList Page Elements are displayed
-    Take Screenshot    fullPag=${True}
+    Take Screenshot    fullPage=${True}
 
 Verify that adding new contact works
     [Tags]    smoke
@@ -57,5 +58,15 @@ Verify that editing new contact works
     [Tags]    smoke
     Open Chrome With Settings
     Login Routine
+    Open Edit Contact Information Menu
     Edit Contact Information
     Take Screenshot    fullPage=${True}
+
+Verify that deleting contact works
+    [Tags]    smoke
+    Open Chrome With Settings
+    Login Routine
+    Open User Profile From Contact List
+    Open Edit Contact Information Menu
+    Cancel Deletion Of Existing Contact
+    Delete Existing Contact Confirm
