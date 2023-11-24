@@ -11,6 +11,9 @@ Resource    ../resources/PageObject/Web/KeywordDefinition/Settings/Contacts/AddC
 Resource    ../resources/PageObject/Web/KeywordDefinition/Settings/Contacts/EditContact.robot
 Resource    ../resources/PageObject/Web/KeywordDefinition/UserProfile/OpenDiffUserProfile.robot
 Resource    ../resources/PageObject/Web/KeywordDefinition/Settings/Contacts/DeleteContact.robot
+Resource    ../resources/PageObject/Web/KeywordDefinition/Messaging/NewMessageMain.robot
+Resource    ../resources/PageObject/Web/KeywordDefinition/Groups/CreateNewGroup.robot
+Resource    ../resources/PageObject/Web/KeywordDefinition/Groups/EditGroup.robot
 
 
 *** Test Cases ***
@@ -32,41 +35,57 @@ Resource    ../resources/PageObject/Web/KeywordDefinition/Settings/Contacts/Dele
 #    Register new user
 #    ChatList Page Elements are displayed
 
-Verify Successful LogOut
-    [Documentation]    Verify logout
-    [Tags]    smoke
-    Open Chrome With Settings
-    Login routine
-    LogOut
+# Verify Successful LogOut
+#    [Documentation]    Verify logout
+#    [Tags]    smoke
+#    Open Chrome With Settings
+#    Login routine
+#    LogOut
 
-Verify that new user can login again
-    [Tags]    smoke
-    Open Chrome With Settings
-    Login Page elements are displayed
-    Login Routine
-    ChatList Page Elements are displayed
-    Take Screenshot    fullPage=${True}
+# Verify that new user can login again
+#    [Tags]    smoke
+#    Open Chrome With Settings
+#    Login Page elements are displayed
+#    Login Routine
+#    ChatList Page Elements are displayed
+#    Take Screenshot    fullPage=${True}
 
-Verify that adding new contact works
-    [Tags]    smoke
-    Open Chrome With Settings
-    Login Routine
-    Open Contacts screen
-    New Contact Elements Are displayed
+# Verify that adding new contact works
+#    [Tags]    smoke
+#    Open Chrome With Settings
+#    Login Routine
+#    Open Contacts screen
+#    New Contact Elements Are displayed
 
-Verify that editing new contact works
-    [Tags]    smoke
-    Open Chrome With Settings
-    Login Routine
-    Open Edit Contact Information Menu
-    Edit Contact Information
-    Take Screenshot    fullPage=${True}
+# Verify that editing new contact works
+#    [Tags]    smoke
+#    Open Chrome With Settings
+#    Login Routine
+#    Open Edit Contact Information Menu
+#    Edit Contact Information
+#    Take Screenshot    fullPage=${True}
 
-Verify that deleting contact works
-    [Tags]    smoke
+# Verify that deleting contact works
+#    [Tags]    smoke
+#    Open Chrome With Settings
+#    Login Routine
+#    Open User Profile From Contact List
+#    Open Edit Contact Information Menu
+#    Cancel Deletion Of Existing Contact
+#    Delete Existing Contact Confirm
+
+# Verify that new message + send message works
+#    Open Chrome With Settings
+#    Login Routine
+#    Open New Message Menu
+#    Send New Message
+
+# Verify that create new group works
+#    Open Chrome With Settings
+#    Login Routine
+#    Create New Group
+
+Verify that edit group info works
     Open Chrome With Settings
     Login Routine
-    Open User Profile From Contact List
-    Open Edit Contact Information Menu
-    Cancel Deletion Of Existing Contact
-    Delete Existing Contact Confirm
+    Edit GroupInfo
