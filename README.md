@@ -14,10 +14,10 @@
 * Goals:
 
 1) Add a new contact +
-2) Create a new dialogue
+2) Create a new dialogue +
 3) Change contact name +
-4) Create a group chat
-5) Change info/name of the group
+4) Create a group chat +
+5) Change info/name of the group 
 6) Change/Add a username for a user
 7) Share a QR code with any chat in the chat list
 8) Block user/unblock user

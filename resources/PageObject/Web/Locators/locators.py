@@ -40,14 +40,14 @@ NewContactPhoneInput = "css=input[aria-label='Phone Number']"
 NewContactFirstNameInput = "css=input[aria-label='First name (required)']"
 NewContactLastNameInput = "css=input[aria-label='Last name (optional)']"
 SubmitNewContactButton = "css=div[id='portals'] button:nth-child(2)"
-NewContactItem = "css=div[class='ListItem chat-item-clickable no-selection has-ripple'] div[class='ripple-container']"
+NewContactItem = "css=div[class='ListItem chat-item-clickable no-selection has-ripple'] div[class='ripple-container']"  #TO-DO: Rename this locator and refactor usage because its not just new contact item
 
 #EDIT
 OpenUserProfile = "css=div[class='chat-info-wrapper'] div[class='ChatInfo']"
-EditContactInfoButton = "css=button[title='Edit']"
+EditContactInfoButton = "css=button[title='Edit']"      #Also for Groups, might need to rename + refactor
 OldContactFirstName = "css=#user-first-name"
 OldContactLastName = "css=#user-last-name"
-SaveEditedContactInfoButton = "css=button[title='Save']"
+SaveEditedContactInfoButton = "css=button[title='Save']"        #Also for Groups...
 
 #DELETE
 DeleteExistingContactButton = "css=div[class='ListItem no-selection has-ripple destructive'] div[class='ripple-container']"
@@ -72,4 +72,24 @@ CancelLogOut = "css=button[class='Button confirm-dialog-button default primary t
 #Messaging
 #NEW MESSAGE
 ActionButton = "xpath=(//button[@title='New Message'])[1]"
-NewMessageButton = "css=div[class='bubble menu-container custom-scroll bottom right opacity-transition fast open shown'] div:nth-child(1)"
+NewMessageButton = "css=div[class='bubble menu-container custom-scroll bottom right opacity-transition fast open shown'] div:nth-child(2)"
+
+
+
+#Groups
+
+#Create New Group
+
+NewGroupButton = "css=div[class='bubble menu-container custom-scroll bottom right opacity-transition fast open shown'] div:nth-child(1)"
+AddNewGroupMemberCheckbox = "css=.Checkbox"
+ProceedButton = "css=button[title='Continue To Group Info']"
+GroupNameInput = "css=input[aria-label='Group name']"
+CompleteCreateGroupButton = "css=button[title='Create Group']"
+
+
+#Edit Group Info
+
+TestGroupTitle = "xpath=//h3[normalize-space()='Test Group']"
+GroupProfileOpen = "xpath=//h3[@dir='auto']"
+GroupTitle = "css=#group-title"
+GroupDescription = "css=#group-about"
